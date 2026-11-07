@@ -13,7 +13,6 @@ Ce dépôt documente mes travaux pratiques de BTS et mon homelab personnel : ce 
 | 02 | [Homelab Linux virtualisé](02-homelab-ubuntu-utm/) | Projet personnel | UTM, Ubuntu Server ARM64, SSH |
 | 03 | [Serveur web Debian à domicile](03-tp-serveur-web-debian/) | TP BTS | Debian, IP fixe, Apache, résolution de nom (hosts) |
 | 04 | [Services d'infrastructure et diagnostic réseau](04-infra-diagnostic-reseau/) | TP BTS | DNS, DHCP, Windows Server, Nmap |
-| 05 | [Installation de Logisim sur macOS](05-tp-logisim-macos/) | TP BTS | macOS, Java (OpenJDK 17), Logisim, terminal |
 
 ## Prochaines étapes (feuille de route jusqu'à mars 2027)
 
