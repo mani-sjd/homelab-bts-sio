@@ -1,0 +1,21 @@
+nom;type;fabricant;modele;numero_serie;numero_inventaire;lieu;groupe;utilisateur;statut;technicien;groupe_technique;date_achat;garantie_mois;fournisseur;commentaire
+PC-0042;Fixe;HP;EliteDesk 800 G6;5CG1234ABC;PC-0042;RDC > Accueil;Administration;lmartin;En service;lbrun;Support informatique;2022-03-14;36;InfoPro Lyon;Poste accueil
+PC-0043;Fixe;HP;EliteDesk 800 G6;5CG1234ABD;PC-0043;RDC > Accueil;Administration;sdupont;En service;lbrun;Support informatique;2022-03-14;36;InfoPro Lyon;Poste accueil
+PC-0031;Fixe;HP;EliteDesk 800 G6;5CG4444ATE;PC-0031;RDC > Atelier de production;Production;;En service;rmasson;Support informatique;2021-06-02;36;InfoPro Lyon;Poste partagé de l'atelier
+PC-0032;Fixe;HP;EliteDesk 800 G6;5CG4444ATF;PC-0032;RDC > Atelier de production;Production;nroux;En service;rmasson;Support informatique;2021-06-02;36;InfoPro Lyon;Ancien poste, candidat à la réforme
+PC-0033;Fixe;HP;EliteDesk 800 G8;5CG4444ATG;PC-0033;RDC > Atelier de production;Production;jfaure;En service;rmasson;Support informatique;2023-05-10;36;InfoPro Lyon;
+PC-0051;Fixe;HP;EliteDesk 800 G8;5CG6100COM;PC-0051;1er étage > Plateau commercial;Commercial;vperrin;En service;lbrun;Support informatique;2023-09-12;36;InfoPro Lyon;
+PC-0052;Fixe;HP;EliteDesk 800 G8;5CG6101COM;PC-0052;1er étage > Plateau commercial;Commercial;bfontaine;En service;lbrun;Support informatique;2023-09-12;36;InfoPro Lyon;
+PC-0061;Fixe;HP;EliteDesk 800 G9;5CG7200CPT;PC-0061;1er étage > Comptabilité;Comptabilité;mblanc;En service;rmasson;Support informatique;2024-02-05;36;InfoPro Lyon;
+PC-0062;Fixe;HP;EliteDesk 800 G9;5CG7201CPT;PC-0062;1er étage > Comptabilité;Comptabilité;egarnier;En service;rmasson;Support informatique;2024-02-05;36;InfoPro Lyon;
+PC-0071;Fixe;HP;EliteDesk 800 G8;5CG7300RHU;PC-0071;1er étage > RH;RH;alambert;En service;lbrun;Support informatique;2022-10-03;36;InfoPro Lyon;
+PC-0081;Fixe;HP;EliteDesk 800 G9;5CG8100DIR;PC-0081;2e étage > Direction;Direction;ibonnet;En service;lbrun;Support informatique;2025-03-17;36;InfoPro Lyon;
+PC-0018;Fixe;HP;EliteDesk 800 G8;5CG5555DIR;PC-0018;Sous-sol > Réserve;Direction;;En stock;rmasson;Support informatique;2023-01-20;36;InfoPro Lyon;Poste de stock
+PC-0019;Fixe;HP;EliteDesk 800 G8;5CG5556RES;PC-0019;Sous-sol > Réserve;Production;;En stock;rmasson;Support informatique;2023-01-20;36;InfoPro Lyon;Poste de stock
+PC-0011;Fixe;HP;EliteDesk 800 G6;5CG1100INF;PC-0011;Sous-sol > Local informatique;Support informatique;ychevalier;En service;lbrun;Support informatique;2021-04-12;36;InfoPro Lyon;Poste du support
+PTB-0057;Portable;HP;ProBook 450 G9;5CD9876XYZ;PTB-0057;1er étage > Plateau commercial;Commercial;kbenali;En service;lbrun;Support informatique;2024-11-15;24;LocaParc;Portable en location
+PTB-0058;Portable;HP;ProBook 450 G9;5CD9876XZA;PTB-0058;1er étage > Plateau commercial;Commercial;cmoreau;En service;lbrun;Support informatique;2024-01-02;24;LocaParc;Portable en location
+PTB-0059;Portable;HP;ProBook 450 G9;5CD9876XZB;PTB-0059;1er étage > Plateau commercial;Commercial;tlefebvre;En service;rmasson;Support informatique;2024-01-02;24;LocaParc;Portable en location
+PTB-0060;Portable;HP;ProBook 450 G9;5CD9876XZC;PTB-0060;2e étage > Direction;Direction;fmercier;En service;rmasson;Support informatique;2024-01-02;24;LocaParc;Portable en location
+DAO-0063;Station de DAO;HP;Z2 Tower G9;CZC7788BE1;DAO-0063;2e étage > Bureau d'études;Bureau d'études;pgirard;En réparation;lbrun;Support informatique;2025-09-08;36;InfoPro Lyon;Carte graphique en panne
+DAO-0064;Station de DAO;HP;Z2 Tower G9;CZC7788BE2;DAO-0064;2e étage > Bureau d'études;Bureau d'études;hrobin;En service;rmasson;Support informatique;2026-02-16;36;InfoPro Lyon;

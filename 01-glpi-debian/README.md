@@ -97,6 +97,74 @@ sudo systemctl reload apache2
 - Installation de **GLPI Agent** sur un poste **Windows 11**.
 - Remontée automatique du matériel et des logiciels du poste dans GLPI.
 
+## Difficultés rencontrées et solutions
+
+| Problème | Solution |
+|---|---|
+| Debian installé avec l'environnement GNOME par erreur | Réinstallation propre sans interface graphique |
+| `sudo` absent (mot de passe root défini à l'installation) | Installation de `sudo` via `su -` et ajout de l'utilisateur au groupe `sudo` |
+| Configuration réseau écrite pour une interface inexistante (`ens33` au lieu de `ens37`) | Repérage avec `ip -br a`, correction de `/etc/network/interfaces` |
+| VM en NAT VMware et non sur le réseau du labo | Plan d'adressage adapté au réseau NAT |
+| Base `glpidb` invisible pour l'utilisateur dédié | `SHOW GRANTS` : le `GRANT` manquait, relancé |
+| Lieux saisis sans accent (`1er etage`) alors que le CSV contient `1er étage` | Renommage avant l'import pour éviter les doublons |
+| Version du plugin Data Injection prévue pour GLPI 10 | Installation de la branche 2.15.x compatible GLPI 11 |
+
+## Captures d'écran
+
+### Partie A — Installation du serveur
+
+| | |
+|---|---|
+| ![Dossier de la VM](captures/01-vm-dossier-fichiers.png) | ![Nom de la VM dans VMware](captures/01-vm-nom-vmware.png) |
+| Fichiers de la VM (nom donné à la création) | Nom affiché dans VMware |
+
+![Adresse IP fixe](captures/02-ip-fixe.png)
+*Adresse IP fixe et passerelle (`ip route`, `ip -br a`)*
+
+![FQDN](captures/03-fqdn.png)
+*Nom d'hôte complet (`hostname -f`)*
+
+![Base MariaDB](captures/04-mariadb-glpidb.png)
+*L'utilisateur dédié voit la base de GLPI*
+
+![Accueil GLPI](captures/05-accueil-glpi.png)
+*GLPI installé et sécurisé : aucun avertissement, parc de 23 ordinateurs*
+
+### Partie B — Construction du parc
+
+![Lieux](captures/06-lieux.png)
+*Arborescence des lieux (étage › pièce)*
+
+![Statuts](captures/06-statuts.png)
+*Statuts du cycle de vie*
+
+![Habilitations](captures/06-habilitations-technicien.png)
+*Technicien : profil Technician sur l'entité racine*
+
+![Rapport d'import](captures/07-rapport-import.png)
+*Second import du même CSV : « Mettre à jour » partout, aucun doublon grâce au numéro de série*
+
+![Correspondances](captures/07-correspondances-1.png)
+*Correspondances colonnes CSV → champs GLPI (Data Injection)*
+
+![Composants](captures/08-agent-composants.png)
+*Poste Windows 11 inventorié automatiquement par GLPI Agent : composants*
+
+![Logiciels](captures/08-agent-logiciels.png)
+*… et logiciels installés*
+
+![Gestion financière](captures/09-gestion-financiere.png)
+*Informations financières d'un portable (fournisseur, valeur, TCO)*
+
+![Historique](captures/09-historique-statuts.png)
+*Historique : traçabilité de chaque changement de statut*
+
+## Livrables
+
+- [Compte rendu complet (PDF)](livrables/compte-rendu-atelier-glpi.pdf)
+- [utilisateurs.csv](livrables/utilisateurs.csv) — 16 utilisateurs fictifs
+- [parc_ateliers_mercier.csv](livrables/parc_ateliers_mercier.csv) — 20 postes fictifs
+
 ## Ce que j'ai appris
 
 - Déployer une application web complète (serveur web + PHP + base de données) sur un serveur Linux sans interface graphique.
