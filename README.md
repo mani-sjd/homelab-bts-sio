@@ -11,7 +11,7 @@ Ce dépôt documente mes travaux pratiques de BTS et mon homelab personnel : ce 
 |---|---|---|---|
 | 01 | [Serveur de gestion de parc GLPI](01-glpi-debian/) | TP BTS | Debian 13, Apache, PHP 8.4, MariaDB, GLPI 11, VMware |
 | 02 | [Homelab Linux virtualisé](02-homelab-ubuntu-utm/) | Projet personnel | UTM, Ubuntu Server ARM64, SSH |
-| 03 | [Serveur web Debian à domicile](03-tp-serveur-web-debian/) | TP BTS | Debian, IP fixe, serveur web, résolution de nom (hosts) |
+| 03 | [Serveur web Debian à domicile](03-tp-serveur-web-debian/) | TP BTS | Debian, IP fixe, Apache, résolution de nom (hosts) |
 | 04 | [Services d'infrastructure et diagnostic réseau](04-infra-diagnostic-reseau/) | TP BTS | DNS, DHCP, Windows Server, Nmap |
 
 ## Prochaines étapes (feuille de route jusqu'à mars 2027)

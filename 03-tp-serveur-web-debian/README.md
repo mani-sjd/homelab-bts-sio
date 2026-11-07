@@ -1,7 +1,7 @@
 # 03 — Serveur web Debian à domicile
 
 **Contexte :** travaux pratiques BTS (module U7 — cybersécurité des services informatiques)
-**Environnement :** machine virtuelle Debian · serveur web · poste client Windows
+**Environnement :** machine virtuelle Debian · serveur web Apache · poste client Windows
 
 ## Objectif
 
@@ -12,7 +12,13 @@ Mettre en place, chez soi, un serveur web Debian accessible depuis un poste Wind
 1. Installation d'une **machine virtuelle Debian**.
 2. Configuration d'une **adresse IP fixe**.
 3. **Test de l'accès Internet** depuis la VM.
-4. Installation et démarrage d'un **serveur web**.
+4. Installation et démarrage du serveur web **Apache** :
+
+```bash
+sudo apt update
+sudo apt install apache2
+sudo systemctl status apache2   # vérifier que le service est actif
+```
 5. Sur le poste **Windows**, ajout d'une entrée dans le fichier `hosts` pour associer un nom local à l'adresse IP de la VM :
 
 ```
